@@ -7,6 +7,16 @@ vetor = []
 
 print("Bem-vindo ao terminal")
 
+print("Comandos utilizáveis")
+
+print(" !!: Executa o ultimo comando realizado ou !N um comando específico ")
+
+print("history: Comando para exibir o histórico dos últimos 10 comandos ")
+
+print("Exit : encerra o script")
+
+
+
 # Laço de repetição
 while True:
     # Comando de entrada
