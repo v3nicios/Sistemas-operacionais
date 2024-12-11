@@ -1,13 +1,13 @@
 import os
 import sys
 
-# Criar um vetor para armazenar o histórico dos comandos (máximo de 10)
+# Criar um vetor para armazenar o histórico dos comandos (10 comandos)
 vetor = []
 
-# Simular o terminal
-print("Bem-vindo ao terminal do Will")
 
-# Laço de repetição infinito
+print("Bem-vindo ao terminal")
+
+# Laço de repetição
 while True:
     # Comando de entrada
     entrada = input("osh> ")
@@ -31,7 +31,6 @@ while True:
 
     # Comando para exibir o histórico dos últimos 10 comandos
     elif entrada == "history":
-        # Exibir comandos do mais recente ao mais antigo
         for i, cmd in enumerate(reversed(vetor[-10:]), 1):
             print(f"{len(vetor) - (i - 1)} {cmd}")
         continue
@@ -66,4 +65,4 @@ while True:
     if entrada == "exit":
         break
 
-print("Adeus usuário, foi bom ter você aqui")
+print("Adeus, foi bom ter você aqui")
